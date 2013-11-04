@@ -1,6 +1,6 @@
 BloggingApp::Application.routes.draw do
 
-  # root 'articles#index'
+  root 'articles#index'
 
   get "/articles" => 'articles#index'
 
