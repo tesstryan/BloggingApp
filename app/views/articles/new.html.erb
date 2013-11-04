@@ -1,0 +1,15 @@
+<h1>Add an Item</h1>
+
+<%= form_tag articles_url, method: 'post' do %>
+
+ <%= label_tag "title", "Title:" %>
+  <%= text_field_tag  "title" %>
+  <br>
+
+  <%= label_tag "content", "Content:" %>
+  <%= text_field_tag  "content" %>
+  <br>
+
+  <%= submit_tag "Submit!" %>
+
+<% end %>

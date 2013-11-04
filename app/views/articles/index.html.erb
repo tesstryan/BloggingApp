@@ -1,0 +1,14 @@
+<h1>Starter School Blog</h1>
+
+  <% @articles.each do |a| %>
+      <h3><%= link_to "#{a.title}", article_url(a.id) %></h3>
+      <p>
+        <%= link_to "Toast", article_url(a.id), method: 'delete' %>
+        <%= link_to "Edit", edit_article_url(a.id) %>
+      </p>
+
+        <%= link_to "Add an Article", new_article_url(a.id) %>
+
+      <br>
+
+  <% end %>
